@@ -1,0 +1,37 @@
+{
+  "name": "purescript-soundcloud",
+  "description": "PureScript bindings for official SoundCloud Javascript SDK",
+  "main": "",
+  "authors": [
+    "Vasiliy Yorkin <vasiliy.yorkin@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "purescript",
+    "soundcloud",
+    "bindings"
+  ],
+  "homepage": "https://github.com/vyorkin/purescript-soundcloud",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vyorkin/purescript-handsontable.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output",
+    "bower.json",
+    "package.json"
+  ],
+  "devDependencies": {
+    "purescript-psci-support": "^4.0.0",
+    "purescript-spec": "^3.1.0"
+  },
+  "dependencies": {
+    "purescript-prelude": "^4.1.1",
+    "purescript-unicode-prelude": "^0.2.4",
+    "purescript-options": "^5.0.0",
+    "purescript-foreign": "^5.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "purescript-soundcloud-example",
+  "private": true,
+  "dependencies": {
+    "purescript-soundcloud": "*"
+  }
+}
