@@ -16,6 +16,7 @@ main = do
   let aff = SC.connect
   pure unit
 
-  -- so... without the line nothing is going to happed, just as I expected
+  -- so... without the line nothing is going to happen
+  -- (the SoundCloud popup window won't show up, uncomment to see the popup window)
 
   -- launchAff_ aff
