@@ -3,7 +3,7 @@
   "scripts": {
     "postinstall": "bower cache clean && bower install && cd example && npm install",
     "build": "pulp build",
-    "example": "bower link && cd example && bower link purescript-soundcloud && npm run -s build",
+    "example": "bower link && cd example && bower link purescript-soundcloud && npm run -s build && npm start",
     "repl": "pulp repl",
     "docs": "pulp docs",
     "bump": "pulp version",

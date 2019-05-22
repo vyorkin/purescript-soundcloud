@@ -11,8 +11,8 @@ import Data.Options as O
 data InitializeOptions
 type Options = O.Options InitializeOptions
 
-clientId ∷ Option Options String
+clientId ∷ Option InitializeOptions String
 clientId = opt "client_id"
 
-redirectUri ∷ Option Options String
+redirectUri ∷ Option InitializeOptions String
 redirectUri = opt "redirect_uri"
