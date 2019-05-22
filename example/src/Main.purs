@@ -13,4 +13,9 @@ main = do
   SC.initialize $
     clientId    := "a281614d7f34dc30b665dfcaa3ed7505" <>
     redirectUri := "http://localhost:8081/success.html"
-  launchAff_ $ SC.connect
+  let aff = SC.connect
+  pure unit
+
+  -- so... without the line nothing is going to happed, just as I expected
+
+  -- launchAff_ aff
