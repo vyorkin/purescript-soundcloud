@@ -29,7 +29,7 @@ bower i --save purescript-soundcloud
 
 Clone the repo, step into it and install the dependencies:
 
-```
+```sh
 $ npm i
 ```
 
@@ -39,21 +39,21 @@ Bower dependencies will be installed automatically.
 
 The project can now be built with:
 
-```
+```sh
 $ npm run build
 ```
 
 or just:
 
-```
+```sh
 $ make
 ```
 
 ## Releasing
 
-1. Update version in `bower.json`
+Update version in `bower.json` and then run:
 
-```
+```sh
 make release v=x.x.x
 ```
 
