@@ -1,7 +1,6 @@
 {
   "name": "purescript-soundcloud",
   "description": "PureScript bindings for official SoundCloud Javascript SDK",
-  "main": "",
   "authors": [
     "Vasiliy Yorkin <vasiliy.yorkin@gmail.com>"
   ],
