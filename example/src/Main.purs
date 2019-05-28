@@ -7,16 +7,20 @@ import Effect (Effect)
 import Effect.Aff (launchAff_)
 import SoundCloud (clientId, redirectUri)
 import SoundCloud as SC
+import Web.Event.EventTarget (addEventListener, eventListener)
+import Web.HTML (window)
+import Web.HTML.Event.EventTypes as Event
+import Web.HTML.Window (toEventTarget) as Window
+
+onLoad ∷ ∀ a. Effect a → Effect Unit
+onLoad handler = do
+  target ← Window.toEventTarget <$> window
+  listener ← eventListener $ const handler
+  addEventListener Event.load listener false target
 
 main ∷ Effect Unit
-main = do
+main = onLoad do
   SC.initialize $
-    clientId    := "a281614d7f34dc30b665dfcaa3ed7505" <>
-    redirectUri := "http://localhost:8081/success.html"
-  let aff = SC.connect
-  pure unit
-
-  -- so... without the line below nothing is going to happen
-  -- (the SoundCloud popup window won't show up, uncomment to see the popup window)
-
-  -- launchAff_ aff
+    clientId    := "6e66f316dfe62dd5b5fdb0e4f0eb4eb3" <>
+    redirectUri := "http://localhost:9292/auth/soundcloud/callback"
+  launchAff_ SC.connect

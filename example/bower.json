@@ -2,6 +2,7 @@
   "name": "purescript-soundcloud-example",
   "private": true,
   "dependencies": {
-    "purescript-soundcloud": "*"
+    "purescript-soundcloud": "*",
+    "purescript-web-html": "^2.2.0"
   }
 }

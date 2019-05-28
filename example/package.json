@@ -2,10 +2,9 @@
   "private": true,
   "scripts": {
     "build": "pulp browserify --optimise --to index.js",
-    "start": "http-server ."
+    "start": "http-server -p 9292 ."
   },
   "dependencies": {
-    "normalize.css": "^8.0.1",
     "soundcloud": "^3.3.2"
   },
   "devDependencies": {
