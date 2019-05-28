@@ -3,7 +3,9 @@ version: 2
 defaults: &defaults
   working_directory: ~/work
   docker:
-    - image: circleci/node:10.8-browsers
+    - image: vyorkin/purescript:latest
+  environment:
+    RTS_ARGS: +RTS -N2 -RTS
 
 jobs:
   build:
