@@ -14,7 +14,7 @@
   "homepage": "https://github.com/vyorkin/purescript-soundcloud",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vyorkin/purescript-handsontable.git"
+    "url": "https://github.com/vyorkin/purescript-soundcloud.git"
   },
   "ignore": [
     "**/.*",
