@@ -5,6 +5,11 @@
 
 PureScript bindings for the [Official SoundCloud Javascript SDK](https://github.com/soundcloud/soundcloud-javascript).
 
+## Warning
+
+It doesn't really work and I don't know how to fix the authentication issue.
+Also, this: https://github.com/soundcloud/soundcloud-javascript/pull/47
+
 # Installation
 
 ## Prerequisites
