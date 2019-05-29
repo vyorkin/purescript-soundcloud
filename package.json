@@ -11,5 +11,7 @@
     "clean": "rm -rf output .pulp-cache",
     "reset": "rm -rf node_modules bower_components"
   },
-  "dependencies": {}
+  "dependencies": {
+    "soundcloud": "^3.3.2"
+  }
 }
