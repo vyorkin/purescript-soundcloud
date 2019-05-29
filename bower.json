@@ -1,6 +1,6 @@
 {
   "name": "purescript-soundcloud",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "PureScript bindings for official SoundCloud Javascript SDK",
   "authors": [
     "Vasiliy Yorkin <vasiliy.yorkin@gmail.com>"
