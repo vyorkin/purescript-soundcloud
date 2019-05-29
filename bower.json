@@ -33,6 +33,7 @@
     "purescript-unicode-prelude": "^0.2.4",
     "purescript-options": "^5.0.0",
     "purescript-foreign": "^5.0.0",
-    "purescript-aff-promise": "^2.1.0"
+    "purescript-aff-promise": "^2.1.0",
+    "purescript-record": "^2.0.1"
   }
 }

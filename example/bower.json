@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "purescript-soundcloud": "*",
-    "purescript-web-html": "^2.2.0"
+    "purescript-web-html": "^2.2.0",
+    "purescript-console": "^4.2.0"
   }
 }

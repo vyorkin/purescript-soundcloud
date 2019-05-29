@@ -5,6 +5,8 @@ import Prelude
 import Data.Options ((:=))
 import Effect (Effect)
 import Effect.Aff (launchAff_)
+import Effect.Class (liftEffect)
+import Effect.Console (log) as Console
 import SoundCloud (redirectUri)
 import SoundCloud as SC
 import Web.Event.EventTarget (addEventListener, eventListener)
@@ -20,6 +22,10 @@ onLoad handler = do
 
 main ∷ Effect Unit
 main = onLoad do
-  SC.initialize "6e66f316dfe62dd5b5fdb0e4f0eb4eb3" $
-    redirectUri := "http://localhost:9292/auth/soundcloud/callback"
-  launchAff_ SC.connect
+  SC.initialize clientId $ redirectUri := successUrl
+  launchAff_ do
+    session ← SC.connect
+    liftEffect $ Console.log $ "oauth token: " <> session.oauthToken
+  where
+    clientId = "6e66f316dfe62dd5b5fdb0e4f0eb4eb3"
+    successUrl = "http://localhost:9292/auth/soundcloud/callback"
